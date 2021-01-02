@@ -23,14 +23,12 @@ namespace RPG.Movement {
             MoveTo(destination);
         }
 
-        public void MoveTo(Vector3 destination)
-        {
+        public void MoveTo(Vector3 destination) {
             navMeshAgent.destination = destination;
             navMeshAgent.isStopped = false;
         }
 
-        public void Cancel()
-        {
+        public void Cancel() {
             navMeshAgent.isStopped = true;
         }
 

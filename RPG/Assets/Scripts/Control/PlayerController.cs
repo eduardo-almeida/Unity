@@ -18,7 +18,10 @@ namespace RPG.Control {
             foreach(RaycastHit hit in hits)
             {
                 CombatTarget target = hit.transform.GetComponent<CombatTarget>();
-                if (target == null) continue;
+                //if (target == null) continue;
+                if(!GetComponent<Fighter>().CanAttack(target)){
+                    continue;
+                } 
                 if (Input.GetMouseButtonDown(0))
                 {
                     GetComponent<Fighter>().Attack(target);
@@ -41,9 +44,13 @@ namespace RPG.Control {
             return false;
         }
 
-        private static Ray GetMouseRay()
-        {
+        private static Ray GetMouseRay() {
             return Camera.main.ScreenPointToRay(Input.mousePosition);
+        }        
+
+        private void OnTriggerEnter(Collider other) {
+            Debug.Log("Colidiu");
+            print("Colidiu");
         }
     }
 }
