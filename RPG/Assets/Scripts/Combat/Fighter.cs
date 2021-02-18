@@ -33,13 +33,20 @@ namespace RPG.Combat {
         private void AttackBehaviour(){
             transform.LookAt(target.transform);
             if(timeSinceLastAttack > timeBetWeenAttack){
-                GetComponent<Animator>().SetTrigger("attack");
+                TriggerAttack();
                 timeSinceLastAttack = 0;
             }
         }
 
+        private void TriggerAttack(){
+                GetComponent<Animator>().ResetTrigger("stopAttack");
+                GetComponent<Animator>().SetTrigger("attack");
+
+        }
+
         // Animation Event
         void Hit(){
+            if(target == null){ return; }
             target.TakeDamage(weaponDamage);
         }
 
@@ -59,9 +66,14 @@ namespace RPG.Combat {
         }
 
         public void Cancel(){
-            GetComponent<Animator>().SetTrigger("stopAttack");
+            StopAtack();
             target = null;
-        }       
+        }   
+
+        private void StopAtack(){
+            GetComponent<Animator>().ResetTrigger("attack");
+            GetComponent<Animator>().SetTrigger("stopAttack");
+        }    
 
     }
 }
