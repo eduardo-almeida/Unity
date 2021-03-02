@@ -2942,31 +2942,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 63155521}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &187779448 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2271151570775971509, guid: 8d35bdb412179a345ac870b2f25e342a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1388702443071626497}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &187779449
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187779448}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: bae19279c1848e147b9f6e3541799ddd, type: 3}
-  m_Controller: {fileID: 9100000, guid: 1c7b0ac0a3c307e429aead3b45fcc497, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -9851,6 +9826,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1878325519, guid: 8d35bdb412179a345ac870b2f25e342a, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: bae19279c1848e147b9f6e3541799ddd, type: 3}
+    - target: {fileID: 1878325519, guid: 8d35bdb412179a345ac870b2f25e342a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1c7b0ac0a3c307e429aead3b45fcc497, type: 2}
     - target: {fileID: 1388702442379173871, guid: 8d35bdb412179a345ac870b2f25e342a,
         type: 3}
       propertyPath: m_Name
@@ -9910,6 +9893,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388702442379173877, guid: 8d35bdb412179a345ac870b2f25e342a,
+        type: 3}
+      propertyPath: m_Speed
+      value: 4.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388702442379173877, guid: 8d35bdb412179a345ac870b2f25e342a,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388702442379173877, guid: 8d35bdb412179a345ac870b2f25e342a,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 1200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d35bdb412179a345ac870b2f25e342a, type: 3}
