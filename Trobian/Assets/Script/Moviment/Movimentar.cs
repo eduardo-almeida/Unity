@@ -8,9 +8,6 @@ public class Movimentar : MonoBehaviour
 {
     [SerializeField] Transform target;
     void Update() {
-        if (Input.GetMouseButton(0)){
-            MoveToCursor();
-        }
         UpdateAnimator();
     }
 
@@ -19,16 +16,9 @@ public class Movimentar : MonoBehaviour
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);
         float speed = localVelocity.z;
         GetComponent<Animator>().SetFloat("ForwardSpeed", speed);
-    }
+    }    
 
-    private void MoveToCursor()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        bool hasHit = Physics.Raycast(ray, out hit);
-
-        if (hasHit){
-        GetComponent<NavMeshAgent>().destination = hit.point;
-        }
+    public void MoveTo(Vector3 destination) {
+        GetComponent<NavMeshAgent>().destination = destination;
     }
 }
