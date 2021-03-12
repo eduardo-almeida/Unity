@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace RPG.Combat{
     public class Fighter : MonoBehaviour
@@ -8,6 +9,7 @@ namespace RPG.Combat{
        public void Attack(CombatTarget target)
         {
             print("Attack!!!!");
+            SceneManager.LoadScene("Combate");
         }
     }
 }
