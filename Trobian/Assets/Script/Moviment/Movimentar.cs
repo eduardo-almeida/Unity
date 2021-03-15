@@ -1,4 +1,4 @@
-﻿using RPG.Combat;
+﻿using RPG.Core;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 namespace RPG.Movement{
-    public class Movimentar : MonoBehaviour {
+    public class Movimentar : MonoBehaviour, IAction {
         [SerializeField] Transform target;
         NavMeshAgent navMeshAgent;
 
@@ -19,7 +19,7 @@ namespace RPG.Movement{
         }
 
         public void StartMovimentAction(Vector3 destination) {
-            GetComponent<Fighter>().Cancel();
+            GetComponent<ActionSchedule>().StartAction(this);
             MoveTo(destination);
         }
 
@@ -28,7 +28,7 @@ namespace RPG.Movement{
             navMeshAgent.isStopped = false;
         }
 
-        public void Parar() {
+        public void Cancel() {
             navMeshAgent.isStopped = true;
         }
 

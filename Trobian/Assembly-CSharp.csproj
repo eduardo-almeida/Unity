@@ -71,8 +71,10 @@
     <Compile Include="Assets\Script\Combat\Fighter.cs" />
     <Compile Include="Assets\Script\Control\PlayerController.cs" />
     <Compile Include="Assets\Script\Control\Teleporte.cs" />
+    <Compile Include="Assets\Script\Core\ActionSchedule.cs" />
     <Compile Include="Assets\Script\Core\Cameras.cs" />
     <Compile Include="Assets\Script\Core\FollowCamera.cs" />
+    <Compile Include="Assets\Script\Core\IAction.cs" />
     <Compile Include="Assets\Script\Menu\MenuInicial.cs" />
     <Compile Include="Assets\Script\Moviment\Movimentar.cs" />
     <None Include="Assets\Baixados\Terreno\Conifers [BOTD]\Render Pipeline Support\Built-in RP\CTI Runtime Components\Shaders\CTI_LOD_Bark_Array_301.shader" />
