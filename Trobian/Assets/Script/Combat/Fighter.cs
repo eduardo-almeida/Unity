@@ -6,15 +6,28 @@ using RPG.Core;
 namespace RPG.Combat{
     public class Fighter : MonoBehaviour, IAction {
         [SerializeField] float weaponRange = 2f;
+        [SerializeField] float timeBetweenAttacks = 1f;
+
+        float timeSingLastAttack = 0;
         Transform target;
 
         private void Update() {
+            timeSingLastAttack += Time.deltaTime;
             if (target == null) return;
             if (!GetIsRange()) {
                 GetComponent<Movimentar>().MoveTo(target.position);
             }
-            else {
+            else
+            {
                 GetComponent<Movimentar>().Cancel();
+                AttackBehaviour();
+            }
+        }
+
+        private void AttackBehaviour() {
+            if(timeSingLastAttack > timeBetweenAttacks) {
+                GetComponent<Animator>().SetTrigger("attack");
+                timeSingLastAttack = 0;
             }
         }
 
@@ -29,6 +42,10 @@ namespace RPG.Combat{
 
         public void Cancel() {
             target = null;
+        }
+
+        public void Hit() {
+
         }
 
         public void Teleporte(CombatTarget target) {
