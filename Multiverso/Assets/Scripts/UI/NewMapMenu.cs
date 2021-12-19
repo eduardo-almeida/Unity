@@ -10,6 +10,12 @@ public class NewMapMenu : MonoBehaviour {
 
 	bool wrapping = true;
 
+	public static NewMapMenu instance;
+
+	void Awake() {
+		instance = this;
+	}
+
 	public void ToggleMapGeneration (bool toggle) {
 		generateMaps = toggle;
 	}

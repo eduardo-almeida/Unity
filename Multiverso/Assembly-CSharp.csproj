@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\HexEdgeType.cs" />
     <Compile Include="Assets\Scripts\HexUnit.cs" />
     <Compile Include="Assets\Scripts\UI\SaveLoadMenu.cs" />
+    <Compile Include="Assets\Scripts\Maquina de Estados\StateMachineController.cs" />
     <Compile Include="Assets\Scripts\HexGridChunk.cs" />
     <Compile Include="Assets\Scripts\Bezier.cs" />
     <Compile Include="Assets\Scripts\HexFeatureCollection.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\Scripts\UI\SaveLoadItem.cs" />
     <Compile Include="Assets\Scripts\HexCellShaderData.cs" />
     <Compile Include="Assets\Scripts\HexMetrics.cs" />
+    <Compile Include="Assets\Scripts\Maquina de Estados\State.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuInicial.cs" />
     <Compile Include="Assets\Scripts\HexCellPriorityQueue.cs" />
     <Compile Include="Assets\Scripts\EdgeVertices.cs" />
@@ -83,8 +85,7 @@
     <Compile Include="Assets\Scripts\HexGrid.cs" />
     <Compile Include="Assets\Scripts\HexCell.cs" />
     <Compile Include="Assets\PolygonFantasyHeroCharacters\Scripts\CharacterRandomizer.cs" />
-    <Compile Include="Assets\Scripts\Maquina de Estados\State.cs" />
-    <Compile Include="Assets\Scripts\Maquina de Estados\StateMachineController.cs" />
+    <Compile Include="Assets\Scripts\Maquina de Estados\States\LoadState.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

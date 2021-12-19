@@ -102,8 +102,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\treeview\Drawers\Layers\ClipsLayer.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\Sequence\RectangleSelect.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\State\SequenceState.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\TimeIndicator.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Items\ClipItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\TimeIndicator.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\treeview\TimelineDataSource.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Animation\AnimationOffsetMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\CustomEditors\MarkerEditor.cs" />
@@ -206,12 +206,12 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Signals\TreeView\SignalReceiverItem.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\Move\MovingItems.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\Move\MoveItemModeReplace.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\inspectors\EditorClipFactory.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\treeview\ManipulationsClips.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\inspectors\TrackAssetInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\inspectors\EditorClipFactory.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Window\PlaybackScroller.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Utilities\Scopes\GUIGroupScope.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\Sequence\Jog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Utilities\Scopes\GUIGroupScope.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Actions\MarkerActions.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Utilities\AnimatedParameterUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\treeview\Drawers\InfiniteTrackDrawer.cs" />
