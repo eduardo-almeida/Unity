@@ -5,6 +5,7 @@ using UnityEngine;
 public class LoadState : State {
 
     public override void Enter() {
-        NewMapMenu.instance.CreateSmallMap();
+        //NewMapMenu.instance.CreateSmallMap();
+        print("Load State");
     }
 }

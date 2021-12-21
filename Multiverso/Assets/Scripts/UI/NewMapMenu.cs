@@ -43,7 +43,8 @@ public class NewMapMenu : MonoBehaviour {
 	}
 
 	public void CreateLargeMap () {
-		CreateMap(80, 60);
+		//CreateMap(80, 60);
+		CreateMap(180, 160);
 	}
 
 	void CreateMap (int x, int z) {
