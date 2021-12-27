@@ -143,14 +143,6 @@ public class HexMapEditor : MonoBehaviour {
 				}
 				return;
 			}
-			if (Input.GetKeyDown(KeyCode.N)) {
-				print("Novo mapa");
-				return;
-			}
-			if (Input.GetKeyDown(KeyCode.L)) {
-				print("Ler mapa");
-				return;
-			}
 		}
 		previousCell = null;
 	}

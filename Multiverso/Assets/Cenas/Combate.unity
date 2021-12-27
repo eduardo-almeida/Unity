@@ -1898,6 +1898,8 @@ GameObject:
   m_Component:
   - component: {fileID: 202967873}
   - component: {fileID: 202967872}
+  - component: {fileID: 202967874}
+  - component: {fileID: 202967875}
   m_Layer: 0
   m_Name: StateMachine
   m_TagString: Untagged
@@ -1931,6 +1933,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &202967874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202967871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71867f3df5b1f44389d34c7942834331, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hexGrid: {fileID: 1571186511}
+  mapGenerator: {fileID: 2056945512}
+--- !u!114 &202967875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202967871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce10e4983e31c142a5b17bafd141ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &203294115
 GameObject:
   m_ObjectHideFlags: 0
