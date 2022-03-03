@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\HexMapGenerator.cs" />
     <Compile Include="Assets\Scripts\HexEdgeType.cs" />
     <Compile Include="Assets\Scripts\HexUnit.cs" />
+    <Compile Include="Assets\Scripts\Maquina de Estados\States\LoadState.cs" />
     <Compile Include="Assets\Scripts\UI\SaveLoadMenu.cs" />
     <Compile Include="Assets\Scripts\Maquina de Estados\StateMachineController.cs" />
     <Compile Include="Assets\Scripts\HexGridChunk.cs" />
@@ -85,7 +86,7 @@
     <Compile Include="Assets\Scripts\HexGrid.cs" />
     <Compile Include="Assets\Scripts\HexCell.cs" />
     <Compile Include="Assets\PolygonFantasyHeroCharacters\Scripts\CharacterRandomizer.cs" />
-    <Compile Include="Assets\Scripts\Maquina de Estados\States\LoadState.cs" />
+    <Compile Include="Assets\Scripts\Maquina de Estados\States\RoamState.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

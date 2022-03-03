@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class NewMapMenu : MonoBehaviour {
 
@@ -37,14 +38,19 @@ public class NewMapMenu : MonoBehaviour {
 	public void CreateSmallMap () {
 		CreateMap(20, 15);
 	}
+	public IEnumerator CreateSmallMap2(LoadState loadState) {
+		yield return StartCoroutine(CreateMap2(20, 15));
+		//loadState.porcentagem = 75;
+		//yield return null;
+	}
 
 	public void CreateMediumMap () {
 		CreateMap(40, 30);
 	}
 
 	public void CreateLargeMap () {
-		//CreateMap(80, 60);
-		CreateMap(180, 160);
+		CreateMap(80, 60);
+		//CreateMap(180, 160);
 	}
 
 	void CreateMap (int x, int z) {
@@ -53,6 +59,18 @@ public class NewMapMenu : MonoBehaviour {
 		}
 		else {
 			hexGrid.CreateMap(x, z, wrapping);
+		}
+		HexMapCamera.ValidatePosition();
+		Close();
+	}
+
+	public IEnumerator CreateMap2(int x, int z) {
+		if (generateMaps) {
+			mapGenerator.GenerateMap(x, z, wrapping);
+			yield return null;
+		} else {
+			hexGrid.CreateMap(x, z, wrapping);
+			yield return null;
 		}
 		HexMapCamera.ValidatePosition();
 		Close();
