@@ -9,7 +9,7 @@ public class NewMapMenu : MonoBehaviour {
 
 	bool generateMaps = true;
 
-	bool wrapping = true;
+	bool wrapping = false;
 
 	public static NewMapMenu instance;
 

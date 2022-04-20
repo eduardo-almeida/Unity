@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Editor\HexCoordinatesDrawer.cs" />
+    <Compile Include="Assets\LeanTween\Editor\LeanTweenDocumentationEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\TextureArrayWizard.cs" />
   </ItemGroup>
   <ItemGroup>
